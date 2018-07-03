@@ -1,7 +1,7 @@
 <template>
     <ul class="navbar">
         <li class="logo">
-            <a href="">Duoco</a>
+           <img src="../assets/logo.svg" alt="">
         </li>
         <li>
             <a href="">Agency</a>
@@ -26,8 +26,10 @@ export default {
 .navbar {
   display: flex;
   position: fixed;
-  padding: 20px 0;
+  align-items: center;
   width: 100vw;
+  height: 70px;
+  padding: 0;
   margin: 0;
   list-style: none;
   z-index: 1;
@@ -47,5 +49,8 @@ export default {
 }
 .navbar .logo {
   margin-right: auto;
+}
+.navbar .logo img {
+  height: 24px;
 }
 </style>
