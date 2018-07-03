@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <Work />
+    <Navbar />
+    <Carousel />
   </div>
 </template>
 
 <script>
-import Work from "./components/Work.vue";
+import Navbar from "./components/Navbar.vue";
+import Carousel from "./components/Carousel.vue";
 
 export default {
   name: "app",
   components: {
-    Work
+    Navbar,
+    Carousel
   }
 };
 </script>
@@ -22,6 +25,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  margin: 0;
 }
 </style>
